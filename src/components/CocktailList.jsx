@@ -45,14 +45,14 @@ const CocktailList = () => {
         {modifiedCocktail.map((item) => {
             const {id, name, image, glass, info} = item
             return (
-                <div className='basis-1'>
-                    <img src={image} alt={name} />
+                <div className='basis-1 shadow p-2 w-[350px]'>
+                    <img className='rounded-sm' src={image} alt={name} />
                     <div className='w-full text-left'>
-                        <p>{name}</p>
+                        <h3>{name}</h3>
                         <p>{info}</p>
-                        <small>{glass}</small>
+                        <p>{glass}</p>
                         <Link to={`/cocktail/${id}`}>
-                            Details
+                            <button className='px-2 text-white rounded-md py-1 bg-blue-400'>deatils</button>
                         </Link>
                     </div>
                 </div>
