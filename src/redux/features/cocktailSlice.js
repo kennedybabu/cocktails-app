@@ -28,7 +28,6 @@ const cocktailSlice = createSlice({
             state.error = action.payload
             state.loading = false
         }
-
     }
 })
 
